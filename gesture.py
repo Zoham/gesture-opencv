@@ -2,11 +2,10 @@ import cv2
 import numpy as np
 import math
 
-
 cap = cv2.VideoCapture(0)
 while(cap.isOpened()):
     # read image
-    ret, img = cap.read()
+    _, img = cap.read()
 
     # get hand data from the rectangle sub window on the screen
     cv2.rectangle(img, (300,300), (100,100), (0,255,0),0)
